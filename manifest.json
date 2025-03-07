@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "BlockLion",
+  "version": "1.0",
+  "description": "Hides non-educational YouTube videos based on a predefined, customisable whitelist.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["https://www.youtube.com/*"],
+  "web_accessible_resources": [
+    {
+      "resources": ["blocked.html"],
+      "matches": ["*://*.youtube.com/*"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["whitelist.js", "content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  }
+}
