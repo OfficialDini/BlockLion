@@ -1,3 +1,8 @@
+// Copyright © 2025 OfficialDini. All rights reserved.
+
+// This software is proprietary and confidential. Unauthorized copying, distribution, modification, or use is strictly prohibited without written permission from the author.
+
+
 // Load user-defined whitelist from Chrome storage
 let userAllowedChannels = [];
 chrome.storage.sync.get(["userAllowedChannels"], (data) => {
@@ -121,3 +126,4 @@ window.addEventListener("load", () => {
 
 // Run check again after a short delay to catch any missed updates
 setTimeout(checkChannel, 3000);
+
