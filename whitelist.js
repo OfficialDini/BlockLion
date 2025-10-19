@@ -1,3 +1,8 @@
+//Copyright © 2025 OfficialDini. All rights reserved.
+
+//This software is proprietary and confidential. Unauthorized copying, distribution, modification, or use is strictly prohibited without written permission from the author.
+//Channels list available under public domain by PrejudiceNeutrino
+
 const allowedChannels = [
 
     "Lemmino ",
@@ -853,5 +858,6 @@ const allowedChannels = [
     "Geology on the Rocks geology",
     "99% Invisible design, sound design and storytelling"
     ];
+
 
 console.log("Whitelist loaded with", allowedChannels.length, "channels.");
